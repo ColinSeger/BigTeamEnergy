@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Bank" id="{5e89497d-f69a-4aed-ba29-441f725c2c72}">
+		<property name="name">
+			<value>Bubbles</value>
+		</property>
+		<relationship name="folder">
+			<destination>{80736905-c5b4-42dc-b968-9a0ab400fc60}</destination>
+		</relationship>
+	</object>
+</objects>
