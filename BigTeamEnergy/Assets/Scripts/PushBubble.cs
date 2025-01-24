@@ -2,18 +2,29 @@ using UnityEngine;
 
 public class PushBubble : MonoBehaviour
 {
-    [SerializeField] Rigidbody rigidbody;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+    enum Direction :byte{
+        Left,
+        Right
     }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        if(Input.GetKey(KeyCode.UpArrow)){
-            rigidbody.AddForce(new Vector3(1,0,0));
+    [SerializeField] float pushForce = 10f;
+    [SerializeField] Direction direction = Direction.Left;
+    void OnTriggerStay(Collider collision){
+        var bubble = collision.gameObject.GetComponent<Rigidbody>();
+        if(bubble){
+            Debug.Log("This should not");
+            bubble.AddForce(this.transform.forward * pushForce * Time.deltaTime);
+        }
+    }
+    void OnTriggerStay2D(Collider2D collider){
+        var bubble = collider.gameObject.GetComponent<Rigidbody2D>();
+        Debug.Log("das");
+        if(bubble){
+            float speed = 2;
+            if(direction == Direction.Left){
+                speed = -2;
+            }
+            bubble.AddForce(speed * bubble.transform.right);
+            bubble.MoveRotation(Vector2.Angle(collider.transform.position, this.transform.position));
         }
     }
 }
