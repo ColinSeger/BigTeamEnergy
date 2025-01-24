@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="Bank" id="{5e89497d-f69a-4aed-ba29-441f725c2c72}">
+	<object class="Bank" id="{55e96f11-f332-4295-9352-d7b2bf5fb46d}">
 		<property name="name">
-			<value>Bubbles</value>
+			<value>Game End</value>
 		</property>
 		<relationship name="folder">
 			<destination>{80736905-c5b4-42dc-b968-9a0ab400fc60}</destination>
