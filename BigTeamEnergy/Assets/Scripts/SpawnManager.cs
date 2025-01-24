@@ -17,7 +17,7 @@ public class SpawnManager : MonoBehaviour
     }
 
     public int BubbleNumber = 0;
-    [SerializeField] GameObject smallBubblePrefab;
+    public GameObject smallBubblePrefab;
     [SerializeField] GameObject mediumBubblePrefab;
     [SerializeField] GameObject largeBubblePrefab;
 
