@@ -1,3 +1,4 @@
+using System.Threading;
 using UnityEngine;
 public enum Direction :byte{
     Left,
@@ -8,6 +9,8 @@ public class PushBubble : MonoBehaviour
     
     [SerializeField] float pushForce = 10f;
     [SerializeField] Direction direction = Direction.Left;
+    [SerializeField] bool barrier;
+    [SerializeField] float angleMultiplier = 2f;
     void OnTriggerStay(Collider collision){
         var bubble = collision.gameObject.GetComponent<Rigidbody>();
         if(bubble){
@@ -22,7 +25,9 @@ public class PushBubble : MonoBehaviour
                 speed = -2;
             }
             bubble.AddForce(speed * pushForce * bubble.transform.right);
-            bubble.SetRotation(Vector2.Angle(collider.gameObject.transform.position, this.transform.position));
+            if(!barrier){
+                bubble.MoveRotation(Vector2.Angle(collider.gameObject.transform.position, this.transform.position) * angleMultiplier);                
+            }
         }
     }
 }
