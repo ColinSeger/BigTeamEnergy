@@ -1340,7 +1340,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 953965341}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1703,6 +1703,7 @@ GameObject:
   - component: {fileID: 953965340}
   - component: {fileID: 953965343}
   - component: {fileID: 953965344}
+  - component: {fileID: 953965345}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1840,6 +1841,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed6139be027fa274289fea3c2a7e73db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &953965345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953965339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &977080022
 GameObject:
   m_ObjectHideFlags: 0
@@ -3261,6 +3276,10 @@ PrefabInstance:
       propertyPath: spawner
       value: 
       objectReference: {fileID: 449267232}
+    - target: {fileID: 9084191369890679558, guid: d9ac366a39e0efc44a58a884824939d6, type: 3}
+      propertyPath: scoreMenu
+      value: 
+      objectReference: {fileID: 574080449}
     - target: {fileID: 9084191369890679558, guid: d9ac366a39e0efc44a58a884824939d6, type: 3}
       propertyPath: waveManager
       value: 
