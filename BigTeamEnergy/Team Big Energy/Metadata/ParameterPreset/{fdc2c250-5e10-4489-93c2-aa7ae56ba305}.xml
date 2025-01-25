@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{fdc2c250-5e10-4489-93c2-aa7ae56ba305}">
+		<property name="name">
+			<value>Medium Bounce</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b4962909-81c7-40af-af59-7ea3a371b6fd}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{db09b08e-f5f9-4421-a486-b9f1ea215b9c}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{db09b08e-f5f9-4421-a486-b9f1ea215b9c}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Medium Bounce</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

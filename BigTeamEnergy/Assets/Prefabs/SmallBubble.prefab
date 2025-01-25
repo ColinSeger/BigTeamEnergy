@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3175333524889690927}
   - component: {fileID: 3469182867404848522}
   - component: {fileID: 6689031485578829596}
+  - component: {fileID: 8710269413131625386}
   m_Layer: 0
   m_Name: SmallBubble
   m_TagString: Untagged
@@ -168,5 +169,39 @@ MonoBehaviour:
   Value: 10
   Size: 1
   BubbleId: 0
+  soundValue: 0
   rb: {fileID: 3469182867404848522}
-  EventReference: event:/Bubbles
+  EventReference: 'event:/Bubbles '
+--- !u!114 &8710269413131625386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029283950946048769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1370843826
+      Data2: 1167033868
+      Data3: -2081518445
+      Data4: 1561454277
+    Path: event:/Bubbles Pop
+  Event: 
+  EventPlayTrigger: 2
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params:
+  - Name: Bubble Parameters
+    Value: 0
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
