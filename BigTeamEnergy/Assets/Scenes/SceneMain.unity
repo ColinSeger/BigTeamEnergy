@@ -595,6 +595,13 @@ MonoBehaviour:
   smallBubblePrefab: {fileID: 3029283950946048769, guid: 39496257b2600e94eb13fdcfd2a8dba7, type: 3}
   mediumBubblePrefab: {fileID: 7149611107152534191, guid: 50d07fddec1285041b894de5f11ae1d9, type: 3}
   largeBubblePrefab: {fileID: 8261924498898946303, guid: 5b73fb7c3566eb54d8aa4732cf9e7077, type: 3}
+  mergeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!4 &449267231
 Transform:
   m_ObjectHideFlags: 0
@@ -1323,13 +1330,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977080022}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59547013, y: -4.54, z: -6.1980267}
+  m_LocalRotation: {x: -0, y: -0, z: 0.5501309, w: -0.8350785}
+  m_LocalPosition: {x: 0.97, y: -4.19, z: -6.1980267}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 293.248}
 --- !u!1001 &994277599
 PrefabInstance:
   m_ObjectHideFlags: 0
