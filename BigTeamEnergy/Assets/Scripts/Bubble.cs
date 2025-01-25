@@ -26,7 +26,10 @@ public class Bubble : MonoBehaviour
     }
     private void Update()
     {
+        if(RoundManager.Instance != null)
+        {
         if (!RoundManager.Instance.isRound) Destroy(this.gameObject);
+        }
     }
 
     void BubbleCollision(Bubble colidedBubble)

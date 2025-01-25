@@ -7,14 +7,14 @@ public enum Direction :byte{
 public class PushBubble : MonoBehaviour
 {
     
-    [SerializeField] float pushForce = 10f;
+    [SerializeField] AnimationCurve pushForce;
     [SerializeField] Direction direction = Direction.Left;
     [SerializeField] bool barrier;
     [SerializeField] float angleMultiplier = 2f;
     void OnTriggerStay(Collider collision){
         var bubble = collision.gameObject.GetComponent<Rigidbody>();
         if(bubble){
-            bubble.AddForce(this.transform.forward * pushForce * Time.deltaTime);
+            bubble.AddForce(this.transform.forward * pushForce.Evaluate(Vector3.Angle(collision.gameObject.transform.position, this.transform.position)) * Time.deltaTime);
         }
     }
     void OnTriggerStay2D(Collider2D collider){
@@ -24,10 +24,12 @@ public class PushBubble : MonoBehaviour
             if(direction == Direction.Left){
                 speed = -2;
             }
-            bubble.AddForce(speed * pushForce * bubble.transform.right);
+            
             if(!barrier){
-                bubble.MoveRotation(Vector2.Angle(collider.gameObject.transform.position, this.transform.position) * angleMultiplier);                
+                bubble.AddForce(speed * pushForce.Evaluate(Vector2.Distance(collider.transform.position, this.transform.parent.position)) * bubble.transform.right);
+                bubble.MoveRotation(Vector2.Angle(collider.gameObject.transform.position, this.transform.parent.position) * angleMultiplier);                
             }else{
+                bubble.AddForce(speed * pushForce.Evaluate(Vector2.Distance(collider.transform.position, this.transform.position)) * bubble.transform.right);
                 bubble.MoveRotation(this.transform.rotation);
             }
         }
