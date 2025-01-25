@@ -26,6 +26,7 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI p1TextMesh;
     [SerializeField] TextMeshProUGUI p2TextMesh;
     [SerializeField] TextMeshProUGUI winnerWinner;
+    public GameObject PopUp;
 
     public void SetScoreText()
     {

@@ -27,6 +27,7 @@ public class RoundManager : MonoBehaviour
     [SerializeField] WaveManager spawner;
 
     [SerializeField] private EventReference gameDoneSound;
+    [SerializeField] WaveManager waveManager;
 
     float timer;
     public int round;
@@ -74,10 +75,8 @@ public class RoundManager : MonoBehaviour
         isRound = false;
 
         //spawner.StopCoroutine(spawner.WaveSpawn());
-        spawner.gameObject.SetActive(false) ;
-
-        var wave = FindFirstObjectByType<WaveManager>();
-        wave.Reset();
+        spawner.gameObject.SetActive(false);
+        waveManager.Reset();
 
         if (ScoreManager.Instance.P1Score > ScoreManager.Instance.P2Score) ScoreManager.Instance.P1Wins += 1;
         else if (ScoreManager.Instance.P2Score > ScoreManager.Instance.P1Score) ScoreManager.Instance.P2Wins += 1;

@@ -1,7 +1,6 @@
 using UnityEngine;
-
-enum Players : byte
-{
+using TMPro;
+enum Players :byte{
     Player1,
     Player2
 }
@@ -28,11 +27,18 @@ public class PlayerWallScript : MonoBehaviour
                 ScoreManager.Instance.P2Score += collidedBubble.Value;
             }
 
+
             // Instantiate the particle effect at the bubble's position
             if (bubblePopEffect != null)
             {
                 Instantiate(bubblePopEffect, collidedBubble.transform.position, Quaternion.identity);
             }
+
+
+            GameObject spawnedPopUp = Instantiate(ScoreManager.Instance.PopUp, collision.transform.position, ScoreManager.Instance.PopUp.transform.rotation);
+            
+            spawnedPopUp.GetComponent<TextMeshPro>().text = "+" + collidedBubble.Value;
+            Destroy(collidedBubble.gameObject);
 
             // Destroy the bubble
             Destroy(collidedBubble.gameObject);
