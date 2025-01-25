@@ -171,7 +171,7 @@ MonoBehaviour:
   BubbleId: 0
   soundValue: 0
   rb: {fileID: 4527211713441633984}
-  EventReference: 'event:/Bubbles '
+  EventReference: event:/Bubbles
 --- !u!114 &8393077456337621865
 MonoBehaviour:
   m_ObjectHideFlags: 0

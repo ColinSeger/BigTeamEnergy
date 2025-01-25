@@ -7,7 +7,7 @@ public class Bubble : MonoBehaviour
     public int Value;
     public int Size;
     public int BubbleId;
-    public float soundValue;
+
 
     public Rigidbody2D rb;
 
@@ -37,15 +37,11 @@ public class Bubble : MonoBehaviour
             }
             else if (colidedBubble.Size > Size || colidedBubble.Size < Size) 
             {
-                if (Size == 1)
-                {
-                    soundValue = 6;
-                    PlayOneShotWithParameter("Small Bounce", 0f);
-                }
+               
 
                 if (Size == 2)
                 {
-                    soundValue = 7;
+                   
                     PlayOneShotWithParameter("Medium Bounce", 0f);
                 }
                 return;
@@ -75,7 +71,7 @@ public class Bubble : MonoBehaviour
 
         // Set the parameter
         instance.setParameterByName(paramName, paramValue);
-        soundValue = paramValue;
+        
         Debug.Log(paramValue);
 
         // Start playback (one-shot)
