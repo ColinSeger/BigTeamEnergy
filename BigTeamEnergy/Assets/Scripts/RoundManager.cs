@@ -9,6 +9,7 @@ public class RoundManager : MonoBehaviour
     [SerializeField] GameObject endRoundMenu;
     [SerializeField] TextMeshProUGUI P1WinsText;
     [SerializeField] TextMeshProUGUI P2WinsText;
+    [SerializeField] Spawner spawner;
 
     float timer;
     public int round;
@@ -47,11 +48,14 @@ public class RoundManager : MonoBehaviour
         ScoreManager.Instance.P2Score = 0;
 
         timer = roundTime;
+        StartCoroutine(spawner.WaveSpawn());
 
     }
     void EndRound()
     {
         isRound = false;
+
+        StopCoroutine(spawner.WaveSpawn());
 
              if (ScoreManager.Instance.P1Score > ScoreManager.Instance.P2Score) ScoreManager.Instance.P1Wins += 1;
         else if (ScoreManager.Instance.P2Score > ScoreManager.Instance.P1Score) ScoreManager.Instance.P2Wins += 1;

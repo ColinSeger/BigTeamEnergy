@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour
     void Start(){
         StartCoroutine(WaveSpawn());
     }
-    IEnumerator WaveSpawn(){
+    public IEnumerator WaveSpawn(){
         while(true){
             if(spawnSpots == SpawnSpots.Both){
                 //AudioManager.instance.PlayOneShot(spawnSound);
