@@ -1,4 +1,5 @@
 using UnityEngine;
+using FMODUnity;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] GameObject mediumBubblePrefab;
     [SerializeField] GameObject largeBubblePrefab;
 
+    [SerializeField] private EventReference mergeSound;
+    
     private void Start()
     {
     }
@@ -33,7 +36,7 @@ public class SpawnManager : MonoBehaviour
         Destroy(secondBubble.gameObject);
         GameObject mergedBubble = Instantiate(size, pos, firstBubble.transform.rotation);
         Bubble mergedBubbleScript = mergedBubble.GetComponent<Bubble>();
-
+        AudioManager.instance.PlayOneShot(mergeSound);
         mergedBubbleScript.rb.AddForce(vel, ForceMode2D.Impulse);
         
     }

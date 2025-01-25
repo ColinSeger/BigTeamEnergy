@@ -169,7 +169,6 @@ MonoBehaviour:
   Value: 30
   Size: 3
   BubbleId: 0
-  soundValue: 0
   rb: {fileID: 5259860736999210068}
   EventReference: event:/Bubbles
 --- !u!114 &4227619546898577884
@@ -201,7 +200,7 @@ MonoBehaviour:
   NonRigidbodyVelocity: 0
   Params:
   - Name: Bubble Parameters
-    Value: 2
+    Value: 1
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20

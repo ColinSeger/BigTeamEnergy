@@ -38,7 +38,6 @@ public class Bubble : MonoBehaviour
             else if (colidedBubble.Size > Size || colidedBubble.Size < Size) 
             {
                
-
                 if (Size == 2)
                 {
                    

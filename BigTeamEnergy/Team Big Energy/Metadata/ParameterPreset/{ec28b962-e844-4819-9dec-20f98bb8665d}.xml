@@ -19,9 +19,9 @@
 			<value>3</value>
 		</property>
 		<property name="enumerationLabels">
-			<value>SmallPop</value>
-			<value>MediumPop</value>
-			<value>LargePop</value>
+			<value>Small Pop</value>
+			<value>Large Pop</value>
+			<value>Medium Pop</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>
