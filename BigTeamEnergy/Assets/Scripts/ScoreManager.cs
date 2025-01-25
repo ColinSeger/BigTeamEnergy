@@ -20,6 +20,9 @@ public class ScoreManager : MonoBehaviour
     public int P2Score;
     [SerializeField] int winScore = 100;
 
+    public int P1Wins;
+    public int P2Wins;
+
     [SerializeField] TextMeshProUGUI p1TextMesh;
     [SerializeField] TextMeshProUGUI p2TextMesh;
     [SerializeField] TextMeshProUGUI winnerWinner;

@@ -15,12 +15,16 @@ public class SpawnManager : MonoBehaviour
             Instance = this;
         }
     }
-
+    public Spawner spawner;
     public int BubbleNumber = 0;
     public GameObject smallBubblePrefab;
     [SerializeField] GameObject mediumBubblePrefab;
     [SerializeField] GameObject largeBubblePrefab;
 
+    private void Start()
+    {
+        spawner = GetComponent<Spawner>();
+    }
     public void MergeBubble(Bubble firstBubble, Bubble secondBubble)
     {
         Vector2 pos = (firstBubble.transform.position + secondBubble.transform.position) / 2;
