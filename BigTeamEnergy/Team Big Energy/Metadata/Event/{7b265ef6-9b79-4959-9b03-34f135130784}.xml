@@ -39,6 +39,7 @@
 			<destination>{ee14eeec-7815-4b69-9fc6-908696c016a5}</destination>
 		</relationship>
 		<relationship name="parameters">
+			<destination>{e544f8a2-cd57-4a96-8c89-4e281044fd09}</destination>
 			<destination>{f2f1c68e-08f9-41c8-b72a-6b4cadae6ff9}</destination>
 		</relationship>
 		<relationship name="banks">
@@ -51,6 +52,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{d82ef0a2-1c2a-45c4-8e89-bc3f0a5a8f53}">
+		<relationship name="modules">
+			<destination>{769c857f-2d8c-4a6f-9650-29e3cbbead62}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{ea59ed06-aa6c-4686-af4e-bc65342c7609}</destination>
 		</relationship>
@@ -152,6 +156,11 @@
 			<destination>{0c9c0485-2834-4be4-a97d-9411a4617dba}</destination>
 		</relationship>
 	</object>
+	<object class="ActionSheet" id="{e544f8a2-cd57-4a96-8c89-4e281044fd09}">
+		<relationship name="modules">
+			<destination>{769c857f-2d8c-4a6f-9650-29e3cbbead62}</destination>
+		</relationship>
+	</object>
 	<object class="ParameterProxy" id="{f2f1c68e-08f9-41c8-b72a-6b4cadae6ff9}">
 		<relationship name="modules">
 			<destination>{c785d714-861c-46c0-8c3a-85c10e8eed4c}</destination>
@@ -176,6 +185,11 @@
 		</relationship>
 		<relationship name="mixer">
 			<destination>{dc3d5561-6685-4594-a617-a38340ede58b}</destination>
+		</relationship>
+	</object>
+	<object class="MultiSound" id="{769c857f-2d8c-4a6f-9650-29e3cbbead62}">
+		<relationship name="sounds">
+			<destination>{3e5795c8-dec6-455e-a226-86cbba75f8d9}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{dac62c7f-7bca-484c-a388-d24cd2899ad9}">
@@ -451,6 +465,11 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c2dbb979-e836-429c-a33c-e508c45e2150}" />
+	<object class="SingleSound" id="{3e5795c8-dec6-455e-a226-86cbba75f8d9}">
+		<relationship name="audioFile">
+			<destination>{b9f4f815-00dc-49a4-bd5d-d5bda0b516e1}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{9b23e4da-fa44-4694-b608-7ccf9db5b536}" />
 	<object class="ParameterCondition" id="{9ea37771-065a-4960-a797-4d9008790585}">
 		<property name="minimum">

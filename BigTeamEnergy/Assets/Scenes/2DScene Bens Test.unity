@@ -358,6 +358,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6096313350161903835, guid: 5b73fb7c3566eb54d8aa4732cf9e7077, type: 3}
+      propertyPath: eventPath
+      value: event:/Bubbles
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096313350161903835, guid: 5b73fb7c3566eb54d8aa4732cf9e7077, type: 3}
+      propertyPath: EventReference
+      value: event:/Bubbles
+      objectReference: {fileID: 0}
     - target: {fileID: 8261924498898946303, guid: 5b73fb7c3566eb54d8aa4732cf9e7077, type: 3}
       propertyPath: m_Name
       value: LargeBubble
@@ -551,6 +559,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushForce: 1
   direction: 0
+  barrier: 0
+  angleMultiplier: 2
 --- !u!61 &396549678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -912,8 +922,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   P1Score: 0
   P2Score: 0
+  winScore: 100
   p1TextMesh: {fileID: 1355503366}
   p2TextMesh: {fileID: 818799822}
+  winnerWinner: {fileID: 0}
 --- !u!4 &574080451
 Transform:
   m_ObjectHideFlags: 0
@@ -985,6 +997,14 @@ PrefabInstance:
     - target: {fileID: 3070947503617897589, guid: 39496257b2600e94eb13fdcfd2a8dba7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689031485578829596, guid: 39496257b2600e94eb13fdcfd2a8dba7, type: 3}
+      propertyPath: eventPath
+      value: event:/Bubbles
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689031485578829596, guid: 39496257b2600e94eb13fdcfd2a8dba7, type: 3}
+      propertyPath: EventReference
+      value: event:/Bubbles
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1620,6 +1640,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushForce: 10
   direction: 1
+  barrier: 0
+  angleMultiplier: 2
 --- !u!70 &1054144816
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1825,6 +1847,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushForce: 1
   direction: 1
+  barrier: 0
+  angleMultiplier: 2
 --- !u!61 &1457232239
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2118,6 +2142,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pushForce: 10
   direction: 0
+  barrier: 0
+  angleMultiplier: 2
 --- !u!1 &1779814089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2308,6 +2334,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4120315971750242725, guid: 50d07fddec1285041b894de5f11ae1d9, type: 3}
+      propertyPath: eventPath
+      value: event:/Bubbles
+      objectReference: {fileID: 0}
+    - target: {fileID: 4120315971750242725, guid: 50d07fddec1285041b894de5f11ae1d9, type: 3}
+      propertyPath: EventReference
+      value: event:/Bubbles
+      objectReference: {fileID: 0}
     - target: {fileID: 5271920219327837830, guid: 50d07fddec1285041b894de5f11ae1d9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9600909

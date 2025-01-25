@@ -1,4 +1,6 @@
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class Bubble : MonoBehaviour
 {
@@ -40,5 +42,49 @@ public class Bubble : MonoBehaviour
             }
         }
     }
+    private void OnDestroy()
+    {
+        if (Size == 1)
+        {
+            PlayOneShotWithParameter("Small Pop", 0);
+        }
+
+        if (Size == 2)
+        {
+            PlayOneShotWithParameter("Medium Pop", 1);
+        }
+
+        if (Size == 3)
+        {
+            PlayOneShotWithParameter("Large Pop", 2);
+        }
+    }
+
+    //[EventRef]
+    public string EventReference; // Assign in the Inspector
+
+    public void PlayOneShotWithParameter(string paramName, float paramValue)
+    {
+        // Create an instance of the event
+        EventInstance instance = RuntimeManager.CreateInstance(EventReference);
+
+        // Set the parameter
+        instance.setParameterByName(paramName, paramValue);
+
+        // Start playback (one-shot)
+        instance.start();
+
+        // Release the instance to free memory once it finishes
+        instance.release();
+    }
+
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        // Play a oneshot sound at the player's position with a parameter value
+    //        PlayOneShotWithParameter("Speed", 10.0f, transform.position);
+    //    }
+    //}
 
 }

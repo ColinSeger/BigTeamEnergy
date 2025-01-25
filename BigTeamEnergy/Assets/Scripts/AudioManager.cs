@@ -1,9 +1,11 @@
 using UnityEngine;
 using FMODUnity;
+using FMOD.Studio;
 
 public class AudioManager : MonoBehaviour
 {
    public static AudioManager instance { get; private set; }
+
 
     private void Awake()
     {
