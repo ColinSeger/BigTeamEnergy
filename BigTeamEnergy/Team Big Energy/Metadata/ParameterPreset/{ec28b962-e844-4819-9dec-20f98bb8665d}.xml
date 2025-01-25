@@ -16,7 +16,7 @@
 			<value>2</value>
 		</property>
 		<property name="maximum">
-			<value>10</value>
+			<value>8</value>
 		</property>
 		<property name="enumerationLabels">
 			<value>Small Pop</value>
@@ -24,11 +24,9 @@
 			<value>Large Pop</value>
 			<value>Small Grow</value>
 			<value>Medium Grow</value>
-			<value>Spawn Sound</value>
-			<value>Spawn</value>
 			<value>Small Bounce</value>
 			<value>Medium Bounce</value>
-			<value>Big Bounce</value>
+			<value>Large Bounce</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>

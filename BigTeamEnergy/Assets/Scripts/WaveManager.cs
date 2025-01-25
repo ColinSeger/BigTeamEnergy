@@ -1,10 +1,13 @@
 using System.Collections;
 using UnityEngine;
+using FMODUnity;
 enum SpawnSpots : byte {
     Top,
     Bottom,
     Both
 }
+
+
 public class Spawner : MonoBehaviour
 {
     [SerializeField] AnimationCurve waveCurve;
@@ -13,6 +16,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] SpawnSpots spawnSpots = SpawnSpots.Both;
     int iterCount;
+
+    [SerializeField] private EventReference spawnSound;
     void Start(){
         StartCoroutine(WaveSpawn());
     }
@@ -33,6 +38,7 @@ public class Spawner : MonoBehaviour
     }
     void Spawn(Transform transform){
         var spawned = Instantiate(SpawnManager.Instance.smallBubblePrefab, transform.position, transform.rotation);
+        AudioManager.instance.PlayOneShot(spawnSound);
         var rig = spawned.GetComponent<Rigidbody2D>();
         rig.AddForce(transform.right * speed, ForceMode2D.Impulse);
     }

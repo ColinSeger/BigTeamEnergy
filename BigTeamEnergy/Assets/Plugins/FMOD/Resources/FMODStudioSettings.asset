@@ -563,6 +563,7 @@ MonoBehaviour:
   Banks:
   - Fan
   - Game End
+  - Spawn
   - UI
   BanksToLoad: []
   LiveUpdatePort: 9264

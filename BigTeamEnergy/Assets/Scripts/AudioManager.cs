@@ -1,16 +1,21 @@
 using UnityEngine;
+using FMODUnity;
 
 public class AudioManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+   public static AudioManager instance { get; private set; }
+
+    private void Awake()
     {
-        
+        if (instance != null)
+        {
+            Debug.LogError("Already Have an Audio Manager here");
+        }
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlayOneShot(EventReference sound)
     {
-        
+        RuntimeManager.PlayOneShot(sound);
     }
 }
