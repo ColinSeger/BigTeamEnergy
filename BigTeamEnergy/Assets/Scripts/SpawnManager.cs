@@ -32,7 +32,7 @@ public class SpawnManager : MonoBehaviour
         GameObject mergedBubble = Instantiate(size, pos, firstBubble.transform.rotation);
         Bubble mergedBubbleScript = mergedBubble.GetComponent<Bubble>();
 
-        mergedBubbleScript.rb.AddForce(vel);
+        mergedBubbleScript.rb.AddForce(vel, ForceMode2D.Impulse);
         
     }
     GameObject SetSize(int size)
