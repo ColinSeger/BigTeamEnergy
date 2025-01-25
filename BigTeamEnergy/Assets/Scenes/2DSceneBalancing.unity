@@ -728,6 +728,13 @@ MonoBehaviour:
   spawnLocation: {fileID: 977080023}
   topSpawn: {fileID: 511592825}
   speed: 2
+  spawnSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &473416283
 GameObject:
   m_ObjectHideFlags: 0
