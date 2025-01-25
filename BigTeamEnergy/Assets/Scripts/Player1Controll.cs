@@ -3,11 +3,14 @@ using UnityEngine;
 public class Player1Controll : MonoBehaviour
 {
     [SerializeField]float speed;
+    float distance = 0.2f;
     void FixedUpdate(){
-        if(Input.GetKey(KeyCode.W)){
+        var up = Physics2D.Raycast(this.transform.position ,Vector2.up, distance);
+        var down = Physics2D.Raycast(this.transform.position ,Vector2.down, distance);
+        if(Input.GetKey(KeyCode.W) && !up){
             this.transform.position += new Vector3(0, 1, 0) * speed * Time.fixedDeltaTime;
         }
-        else if(Input.GetKey(KeyCode.S)){
+        else if(Input.GetKey(KeyCode.S) && !down){
             this.transform.position -= new Vector3(0, 1, 0) * speed * Time.fixedDeltaTime;
         } 
     }
