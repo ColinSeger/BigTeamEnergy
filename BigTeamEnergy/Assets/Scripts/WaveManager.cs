@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using FMODUnity;
 
 public class Spawner : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] Transform topSpawn;
     [SerializeField] float speed;
     int iterCount;
+
+    [SerializeField] private EventReference spawnSound;
     void Start(){
         StartCoroutine(WaveSpawn());
     }
@@ -21,6 +24,7 @@ public class Spawner : MonoBehaviour
     }
     void Spawn(Transform transform){
         var spawned = Instantiate(SpawnManager.Instance.smallBubblePrefab, transform.position, transform.rotation);
+        AudioManager.instance.PlayOneShot(spawnSound);
         var rig = spawned.GetComponent<Rigidbody2D>();
         rig.AddForce(transform.right * speed, ForceMode2D.Impulse);
     }
