@@ -716,9 +716,10 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spawnLocation: {fileID: 977080023}
+  bottomSpawn: {fileID: 977080023}
   topSpawn: {fileID: 511592825}
   speed: 2
+  spawnSpots: 2
   spawnSound:
     Guid:
       Data1: 681479444
@@ -923,6 +924,8 @@ MonoBehaviour:
   P1Score: 0
   P2Score: 0
   winScore: 100
+  P1Wins: 0
+  P2Wins: 0
   p1TextMesh: {fileID: 1355503366}
   p2TextMesh: {fileID: 818799822}
   winnerWinner: {fileID: 0}

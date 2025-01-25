@@ -78,13 +78,6 @@ public class Bubble : MonoBehaviour
         instance.release();
     }
 
-    //void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Space))
-    //    {
-    //        // Play a oneshot sound at the player's position with a parameter value
-    //        PlayOneShotWithParameter("Speed", 10.0f, transform.position);
-    //    }
-    //}
+
 
 }
