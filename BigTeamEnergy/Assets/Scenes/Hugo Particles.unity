@@ -400,7 +400,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3948911428278782284, guid: f9c1ced380671458a9accfe460f365d8, type: 3}
       propertyPath: looping
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5577854089063873086, guid: f9c1ced380671458a9accfe460f365d8, type: 3}
       propertyPath: m_LocalScale.x
