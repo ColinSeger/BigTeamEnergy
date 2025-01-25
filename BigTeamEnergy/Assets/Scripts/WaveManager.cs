@@ -1,20 +1,32 @@
 using System.Collections;
 using UnityEngine;
-
+enum SpawnSpots : byte {
+    Top,
+    Bottom,
+    Both
+}
 public class Spawner : MonoBehaviour
 {
     [SerializeField] AnimationCurve waveCurve;
-    [SerializeField] Transform spawnLocation;
+    [SerializeField] Transform bottomSpawn;
     [SerializeField] Transform topSpawn;
     [SerializeField] float speed;
+    [SerializeField] SpawnSpots spawnSpots = SpawnSpots.Both;
     int iterCount;
     void Start(){
         StartCoroutine(WaveSpawn());
     }
     IEnumerator WaveSpawn(){
         while(true){
-            Spawn(spawnLocation);
-            Spawn(topSpawn);
+            if(spawnSpots == SpawnSpots.Both){
+                Spawn(bottomSpawn);
+                Spawn(topSpawn);
+            }else if (spawnSpots == SpawnSpots.Top){
+                Spawn(topSpawn);
+            }else if(spawnSpots == SpawnSpots.Bottom){
+                Spawn(bottomSpawn);
+            }
+
             yield return new WaitForSeconds(waveCurve.Evaluate(iterCount));
             iterCount++;
         }
