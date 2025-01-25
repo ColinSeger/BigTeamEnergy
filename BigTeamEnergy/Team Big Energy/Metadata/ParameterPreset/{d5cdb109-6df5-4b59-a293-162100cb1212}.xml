@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{d5cdb109-6df5-4b59-a293-162100cb1212}">
+		<property name="name">
+			<value>Small Bounce</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b4962909-81c7-40af-af59-7ea3a371b6fd}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{90d80a83-e167-44a5-8ae2-9aa79dc01a57}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{90d80a83-e167-44a5-8ae2-9aa79dc01a57}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Small Bounce</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

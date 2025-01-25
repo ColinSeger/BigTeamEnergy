@@ -7,6 +7,7 @@ public class Bubble : MonoBehaviour
     public int Value;
     public int Size;
     public int BubbleId;
+    public float soundValue;
 
     public Rigidbody2D rb;
 
@@ -21,44 +22,48 @@ public class Bubble : MonoBehaviour
         Bubble colidedBubble = collision.gameObject.GetComponent<Bubble>();
 
         BubbleCollision(colidedBubble);
+      
     }
 
     void BubbleCollision(Bubble colidedBubble)
     {
         if (colidedBubble != null)
         {
-            if (colidedBubble.Size == 3) return;
-            else if (colidedBubble.Size > Size || colidedBubble.Size < Size) return;
-            else if (colidedBubble.Size == Size)
+            if (colidedBubble.Size == 3)
             {
-                if (colidedBubble.BubbleId > BubbleId)
+            
+                PlayOneShotWithParameter("Large Bounce", 0f);
+                return;
+            }
+            else if (colidedBubble.Size > Size || colidedBubble.Size < Size) 
+            {
+                if (Size == 1)
                 {
-                    return;
+                    soundValue = 6;
+                    PlayOneShotWithParameter("Small Bounce", 0f);
                 }
-                else
+
+                if (Size == 2)
                 {
-                    SpawnManager.Instance.MergeBubble(this, colidedBubble);
+                    soundValue = 7;
+                    PlayOneShotWithParameter("Medium Bounce", 0f);
                 }
+                return;
+            }
+        else if (colidedBubble.Size == Size)
+        {
+            if (colidedBubble.BubbleId > BubbleId)
+            {
+                return;
+            }
+            else
+            {
+                SpawnManager.Instance.MergeBubble(this, colidedBubble);
             }
         }
-    }
-    private void OnDestroy()
-    {
-        if (Size == 1)
-        {
-            PlayOneShotWithParameter("Small Pop", 0);
-        }
-
-        if (Size == 2)
-        {
-            PlayOneShotWithParameter("Medium Pop", 1);
-        }
-
-        if (Size == 3)
-        {
-            PlayOneShotWithParameter("Large Pop", 2);
         }
     }
+
 
     //[EventRef]
     public string EventReference; // Assign in the Inspector
@@ -70,6 +75,8 @@ public class Bubble : MonoBehaviour
 
         // Set the parameter
         instance.setParameterByName(paramName, paramValue);
+        soundValue = paramValue;
+        Debug.Log(paramValue);
 
         // Start playback (one-shot)
         instance.start();
