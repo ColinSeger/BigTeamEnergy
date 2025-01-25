@@ -12,13 +12,19 @@ public class GruntRandomiser : MonoBehaviour
 
     private void OnDestroy()
     {
-            StartCoroutine(PlaySoundWithRandomChance());
+        if(isActiveAndEnabled){
+            StartCoroutine(PlaySoundWithRandomChance());            
+        }
+
     }
 
     private IEnumerator PlaySoundWithRandomChance()
     {
         while (true)
         {
+            if(!isActiveAndEnabled){
+                break;
+            }   
             float randomDelay = Random.Range(minInterval, maxInterval);
             yield return new WaitForSeconds(randomDelay);
 
