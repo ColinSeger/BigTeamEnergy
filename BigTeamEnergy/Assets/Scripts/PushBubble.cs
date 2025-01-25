@@ -27,6 +27,8 @@ public class PushBubble : MonoBehaviour
             bubble.AddForce(speed * pushForce * bubble.transform.right);
             if(!barrier){
                 bubble.MoveRotation(Vector2.Angle(collider.gameObject.transform.position, this.transform.position) * angleMultiplier);                
+            }else{
+                bubble.MoveRotation(this.transform.rotation);
             }
         }
     }
