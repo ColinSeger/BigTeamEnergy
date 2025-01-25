@@ -447,7 +447,7 @@ Transform:
   m_GameObject: {fileID: 232514547}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.71018535, w: 0.7040148}
-  m_LocalPosition: {x: 11.91, y: 0.79, z: 0.0064406395}
+  m_LocalPosition: {x: 12.91, y: 0.79, z: 0.0064406395}
   m_LocalScale: {x: 17.92, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -496,7 +496,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13131c4d1e78cb409c99cb689c69633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 1
+  pushForce:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   direction: 0
   barrier: 1
   angleMultiplier: 2
@@ -847,7 +852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5120089238285457123, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.200175
+      value: -7.200175
       objectReference: {fileID: 0}
     - target: {fileID: 5120089238285457123, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1696,7 +1701,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13131c4d1e78cb409c99cb689c69633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 1
+  pushForce:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   direction: 1
   barrier: 1
   angleMultiplier: 2
@@ -1734,7 +1744,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -3.179666, y: 0}
+  m_Offset: {x: -3.6418636, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1744,7 +1754,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.339941, y: 10.11}
+  m_Size: {x: 6.415546, y: 10.11}
   m_EdgeRadius: 0
 --- !u!4 &1457232240
 Transform:
@@ -1890,7 +1900,7 @@ Transform:
   m_GameObject: {fileID: 1504290487}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.71018535, w: 0.7040148}
-  m_LocalPosition: {x: -7.06, y: 0.97, z: 0.0064406395}
+  m_LocalPosition: {x: -8.06, y: 0.97, z: 0.0064406395}
   m_LocalScale: {x: 17.92, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2271,7 +2281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5120089238285457123, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.18
+      value: 7.18
       objectReference: {fileID: 0}
     - target: {fileID: 5120089238285457123, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
       propertyPath: m_LocalPosition.y
