@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class ScaleView : MonoBehaviour
 {
-    void Start()
+    void FixedUpdate()
     {
         Adjust();
     }
