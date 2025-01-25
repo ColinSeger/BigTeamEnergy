@@ -48,16 +48,18 @@ public class RoundManager : MonoBehaviour
         ScoreManager.Instance.P2Score = 0;
 
         timer = roundTime;
-        StartCoroutine(spawner.WaveSpawn());
+        spawner.gameObject.SetActive(true);
+        spawner.StartCoroutine(spawner.WaveSpawn());
 
     }
     void EndRound()
     {
         isRound = false;
 
-        StopCoroutine(spawner.WaveSpawn());
+        //spawner.StopCoroutine(spawner.WaveSpawn());
+        spawner.gameObject.SetActive(false) ;
 
-             if (ScoreManager.Instance.P1Score > ScoreManager.Instance.P2Score) ScoreManager.Instance.P1Wins += 1;
+        if (ScoreManager.Instance.P1Score > ScoreManager.Instance.P2Score) ScoreManager.Instance.P1Wins += 1;
         else if (ScoreManager.Instance.P2Score > ScoreManager.Instance.P1Score) ScoreManager.Instance.P2Wins += 1;
 
         P1WinsText.text = "player One Wins: " + ScoreManager.Instance.P1Wins;
