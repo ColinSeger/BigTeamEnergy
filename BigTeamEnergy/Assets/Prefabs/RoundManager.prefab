@@ -590,7 +590,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -1103.0876, y: -560.2985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1625425051049405226
@@ -681,6 +681,14 @@ MonoBehaviour:
   endRoundMenu: {fileID: 7397082861717854211}
   P1WinsText: {fileID: 6153332588733800523}
   P2WinsText: {fileID: 5668014508692041751}
+  spawner: {fileID: 0}
+  gameDoneSound:
+    Guid:
+      Data1: -121788752
+      Data2: 1114229152
+      Data3: 1553346741
+      Data4: -591560908
+    Path: event:/Game End
   round: 0
 --- !u!1 &8226108658505183628
 GameObject:

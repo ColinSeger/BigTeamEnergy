@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using FMODUnity;
+
 public class RoundManager : MonoBehaviour
 {
 
@@ -10,6 +12,8 @@ public class RoundManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI P1WinsText;
     [SerializeField] TextMeshProUGUI P2WinsText;
     [SerializeField] Spawner spawner;
+
+    [SerializeField] private EventReference gameDoneSound;
 
     float timer;
     public int round;
@@ -66,5 +70,6 @@ public class RoundManager : MonoBehaviour
         P2WinsText.text = "player Two Wins: " + ScoreManager.Instance.P2Wins;
 
         endRoundMenu.SetActive(true);
+        AudioManager.instance.PlayOneShot(gameDoneSound);
     }
 }

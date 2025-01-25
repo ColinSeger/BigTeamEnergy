@@ -48,3 +48,10 @@ MonoBehaviour:
   smallBubblePrefab: {fileID: 3029283950946048769, guid: 39496257b2600e94eb13fdcfd2a8dba7, type: 3}
   mediumBubblePrefab: {fileID: 7149611107152534191, guid: 50d07fddec1285041b894de5f11ae1d9, type: 3}
   largeBubblePrefab: {fileID: 8261924498898946303, guid: 5b73fb7c3566eb54d8aa4732cf9e7077, type: 3}
+  mergeSound:
+    Guid:
+      Data1: 469736759
+      Data2: 1183863828
+      Data3: -978245221
+      Data4: 2059968967
+    Path: event:/Grow
