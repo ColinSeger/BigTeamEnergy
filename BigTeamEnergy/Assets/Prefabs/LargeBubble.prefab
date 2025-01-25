@@ -169,3 +169,4 @@ MonoBehaviour:
   Size: 3
   BubbleId: 0
   rb: {fileID: 5259860736999210068}
+  EventReference: event:/Bubbles

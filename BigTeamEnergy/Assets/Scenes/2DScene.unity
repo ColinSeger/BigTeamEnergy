@@ -672,7 +672,7 @@ MonoBehaviour:
   bottomSpawn: {fileID: 977080023}
   topSpawn: {fileID: 511592825}
   speed: 2
-  spawnSpots: 2
+  spawnSpots: 3
   spawnSound:
     Guid:
       Data1: 681479444
