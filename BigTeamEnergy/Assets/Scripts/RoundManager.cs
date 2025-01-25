@@ -4,8 +4,21 @@ using FMODUnity;
 
 public class RoundManager : MonoBehaviour
 {
+    public static RoundManager Instance;
 
-[SerializeField] TextMeshProUGUI timerDisplay;
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
+
+    [SerializeField] TextMeshProUGUI timerDisplay;
 
     [SerializeField] float roundTime;
     [SerializeField] GameObject endRoundMenu;
@@ -17,7 +30,7 @@ public class RoundManager : MonoBehaviour
 
     float timer;
     public int round;
-    bool isRound = true;
+    public bool isRound = true;
 
     private void Start()
     {
