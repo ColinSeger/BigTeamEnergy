@@ -22,6 +22,6 @@ public class Spawner : MonoBehaviour
     void Spawn(Transform transform){
         var spawned = Instantiate(SpawnManager.Instance.smallBubblePrefab, transform.position, transform.rotation);
         var rig = spawned.GetComponent<Rigidbody2D>();
-        rig.AddForce(Vector2.right * speed, ForceMode2D.Impulse);
+        rig.AddForce(transform.right * speed, ForceMode2D.Impulse);
     }
 }

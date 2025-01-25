@@ -1,8 +1,11 @@
 using UnityEngine;
-
+enum Players :byte{
+    Player1,
+    Player2
+}
 public class PlayerWallScript : MonoBehaviour
 {
-    [SerializeField] int playerNum;
+    [SerializeField] Players playerNum;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -10,8 +13,8 @@ public class PlayerWallScript : MonoBehaviour
 
         if (colidedBubble != null)
         {
-            if (playerNum == 1) ScoreManager.Instance.P2Score += colidedBubble.Value;
-            if (playerNum == 2) ScoreManager.Instance.P2Score += colidedBubble.Value;
+            if (playerNum == Players.Player1) ScoreManager.Instance.P1Score += colidedBubble.Value;
+            if (playerNum == Players.Player2) ScoreManager.Instance.P2Score += colidedBubble.Value;
 
             Destroy(colidedBubble.gameObject);
 
