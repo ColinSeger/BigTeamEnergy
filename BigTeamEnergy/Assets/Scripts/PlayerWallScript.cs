@@ -1,7 +1,12 @@
 using UnityEngine;
+<<<<<<< Updated upstream
 
 enum Players : byte
 {
+=======
+using TMPro;
+enum Players :byte{
+>>>>>>> Stashed changes
     Player1,
     Player2
 }
@@ -28,11 +33,19 @@ public class PlayerWallScript : MonoBehaviour
                 ScoreManager.Instance.P2Score += collidedBubble.Value;
             }
 
+<<<<<<< Updated upstream
             // Instantiate the particle effect at the bubble's position
             if (bubblePopEffect != null)
             {
                 Instantiate(bubblePopEffect, collidedBubble.transform.position, Quaternion.identity);
             }
+=======
+
+            GameObject spawnedPopUp = Instantiate(ScoreManager.Instance.PopUp, collision.transform.position, ScoreManager.Instance.PopUp.transform.rotation);
+            
+            spawnedPopUp.GetComponent<TextMeshPro>().text = "+" + colidedBubble.Value;
+            Destroy(colidedBubble.gameObject);
+>>>>>>> Stashed changes
 
             // Destroy the bubble
             Destroy(collidedBubble.gameObject);

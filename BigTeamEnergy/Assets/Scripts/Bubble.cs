@@ -1,6 +1,7 @@
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using TMPro;
 
 public class Bubble : MonoBehaviour
 {
@@ -44,7 +45,6 @@ public class Bubble : MonoBehaviour
             }
             else if (colidedBubble.Size > Size || colidedBubble.Size < Size) 
             {
-               
                 if (Size == 2)
                 {
                    
@@ -85,6 +85,10 @@ public class Bubble : MonoBehaviour
 
         // Release the instance to free memory once it finishes
         instance.release();
+    }
+    private void OnDestroy()
+    {
+
     }
 
 
