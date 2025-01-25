@@ -1,23 +1,43 @@
 using UnityEngine;
-enum Players :byte{
+
+enum Players : byte
+{
     Player1,
     Player2
 }
+
 public class PlayerWallScript : MonoBehaviour
 {
-    [SerializeField] Players playerNum;
+    [SerializeField] private Players playerNum;
+    // Assign your particle effect prefab here in the Inspector
+    [SerializeField] private GameObject bubblePopEffect;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Bubble colidedBubble = collision.gameObject.GetComponent<Bubble>();
+        Bubble collidedBubble = collision.gameObject.GetComponent<Bubble>();
 
-        if (colidedBubble != null)
+        if (collidedBubble != null)
         {
-            if (playerNum == Players.Player1) ScoreManager.Instance.P1Score += colidedBubble.Value;
-            if (playerNum == Players.Player2) ScoreManager.Instance.P2Score += colidedBubble.Value;
+            // Update score
+            if (playerNum == Players.Player1)
+            {
+                ScoreManager.Instance.P1Score += collidedBubble.Value;
+            }
+            else if (playerNum == Players.Player2)
+            {
+                ScoreManager.Instance.P2Score += collidedBubble.Value;
+            }
 
-            Destroy(colidedBubble.gameObject);
+            // Instantiate the particle effect at the bubble's position
+            if (bubblePopEffect != null)
+            {
+                Instantiate(bubblePopEffect, collidedBubble.transform.position, Quaternion.identity);
+            }
 
+            // Destroy the bubble
+            Destroy(collidedBubble.gameObject);
+
+            // Update score text
             ScoreManager.Instance.SetScoreText();
         }
     }

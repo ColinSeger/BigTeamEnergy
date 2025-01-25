@@ -9,7 +9,7 @@ enum SpawnSpots : byte {
 }
 
 
-public class Spawner : MonoBehaviour
+public class WaveManager : MonoBehaviour
 {
     [SerializeField] AnimationCurve waveCurve;
     [SerializeField] Transform bottomSpawn;
@@ -53,5 +53,9 @@ public class Spawner : MonoBehaviour
         AudioManager.instance.PlayOneShot(spawnSound);
         var rig = spawned.GetComponent<Rigidbody2D>();
         rig.AddForce(transform.right * speed, ForceMode2D.Impulse);
+    }
+    public void Reset(){
+        iterCount = 0;
+        alt = false;
     }
 }
