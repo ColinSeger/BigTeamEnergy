@@ -40,7 +40,7 @@ public class RoundManager : MonoBehaviour
     void timerHandler()
     {
         timer -= Time.deltaTime;
-        timerDisplay.text = "time left: " + timer;
+        timerDisplay.text = "time left: " + timer.ToString("F0");
     }
     public void newRound()
     {
