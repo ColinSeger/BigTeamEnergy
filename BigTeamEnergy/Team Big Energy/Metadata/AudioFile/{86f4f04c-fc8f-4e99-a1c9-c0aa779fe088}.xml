@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{86f4f04c-fc8f-4e99-a1c9-c0aa779fe088}">
+		<property name="assetPath">
+			<value>Fan.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.5023129251700684</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c4136560-45b5-48a5-9190-d0c7d50e12e4}</destination>
+		</relationship>
+	</object>
+</objects>
