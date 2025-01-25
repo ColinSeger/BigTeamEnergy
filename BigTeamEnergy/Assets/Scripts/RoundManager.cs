@@ -6,7 +6,6 @@ public class RoundManager : MonoBehaviour
 [SerializeField] TextMeshProUGUI timerDisplay;
 
     [SerializeField] float roundTime;
-    [SerializeField] int scoreToWin;
     [SerializeField] GameObject endRoundMenu;
     [SerializeField] TextMeshProUGUI P1WinsText;
     [SerializeField] TextMeshProUGUI P2WinsText;
@@ -25,8 +24,8 @@ public class RoundManager : MonoBehaviour
 
         if (
             timer <= 0 
-            || ScoreManager.Instance.P1Score>= scoreToWin 
-            || ScoreManager.Instance.P2Score>= scoreToWin 
+            || ScoreManager.Instance.P1Score>= ScoreManager.Instance.winScore 
+            || ScoreManager.Instance.P2Score>= ScoreManager.Instance.winScore 
             )
         {
             if(isRound) EndRound();

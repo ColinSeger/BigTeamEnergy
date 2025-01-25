@@ -18,7 +18,7 @@ public class ScoreManager : MonoBehaviour
 
     public int P1Score;
     public int P2Score;
-    [SerializeField] int winScore = 100;
+    public int winScore = 100;
 
     public int P1Wins;
     public int P2Wins;
@@ -34,18 +34,18 @@ public class ScoreManager : MonoBehaviour
     }
 
     void Update(){
-        if(P1Score >= winScore){
-            //Debug.Log("Player 1 won");
-            winnerWinner.text = "Player 1 won";
-            winnerWinner.gameObject.SetActive(true);
-            Time.timeScale = 0f;
-        }
-        if(P2Score >= winScore){
-            //Debug.Log("Player2 won");
-            winnerWinner.text = "Player 2 won";
-            winnerWinner.gameObject.SetActive(true);
-            Time.timeScale = 0f;
-        }
+        //if(P1Score >= winScore){
+        //    Debug.Log("Player 1 won");
+        //    winnerWinner.text = "Player 1 won";
+        //    winnerWinner.gameObject.SetActive(true);
+        //    Time.timeScale = 0f;
+        //}
+        //if(P2Score >= winScore){
+        //    Debug.Log("Player2 won");
+        //    winnerWinner.text = "Player 2 won";
+        //    winnerWinner.gameObject.SetActive(true);
+        //    Time.timeScale = 0f;
+        //}
     }
 
 }

@@ -15,7 +15,6 @@ public class SpawnManager : MonoBehaviour
             Instance = this;
         }
     }
-    public Spawner spawner;
     public int BubbleNumber = 0;
     public GameObject smallBubblePrefab;
     [SerializeField] GameObject mediumBubblePrefab;
@@ -23,7 +22,6 @@ public class SpawnManager : MonoBehaviour
 
     private void Start()
     {
-        spawner = GetComponent<Spawner>();
     }
     public void MergeBubble(Bubble firstBubble, Bubble secondBubble)
     {
