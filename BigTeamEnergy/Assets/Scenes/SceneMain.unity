@@ -2438,6 +2438,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 449267232}
     - target: {fileID: 9084191369890679558, guid: d9ac366a39e0efc44a58a884824939d6, type: 3}
+      propertyPath: waveManager
+      value: 
+      objectReference: {fileID: 449267232}
+    - target: {fileID: 9084191369890679558, guid: d9ac366a39e0efc44a58a884824939d6, type: 3}
       propertyPath: timerDisplay
       value: 
       objectReference: {fileID: 880208224}
@@ -2541,10 +2545,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3980837115409875027, guid: 6368e1dfa8b176b46be31ce63271ded4, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6368e1dfa8b176b46be31ce63271ded4, type: 3}
 --- !u!1001 &1936666559913377231
 PrefabInstance:
