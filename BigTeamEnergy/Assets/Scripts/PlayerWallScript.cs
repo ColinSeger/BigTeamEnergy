@@ -38,6 +38,11 @@ public class PlayerWallScript : MonoBehaviour
             GameObject spawnedPopUp = Instantiate(ScoreManager.Instance.PopUp, collision.transform.position, ScoreManager.Instance.PopUp.transform.rotation);
             
             spawnedPopUp.GetComponent<TextMeshPro>().text = "+" + collidedBubble.Value;
+            if(playerNum == Players.Player2){
+                spawnedPopUp.transform.position = new Vector2(-8 ,spawnedPopUp.transform.position.y);
+            }else if(playerNum == Players.Player1){
+                spawnedPopUp.transform.position = new Vector2(8 ,spawnedPopUp.transform.position.y);
+            }
             Destroy(collidedBubble.gameObject);
 
             // Destroy the bubble
