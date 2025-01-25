@@ -4,7 +4,8 @@ using FMODUnity;
 enum SpawnSpots : byte {
     Top,
     Bottom,
-    Both
+    Both,
+    Alternate
 }
 
 
@@ -16,6 +17,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] SpawnSpots spawnSpots = SpawnSpots.Both;
     int iterCount;
+    bool alt = false;
 
     [SerializeField] private EventReference spawnSound;
     void Start(){
@@ -24,12 +26,22 @@ public class Spawner : MonoBehaviour
     IEnumerator WaveSpawn(){
         while(true){
             if(spawnSpots == SpawnSpots.Both){
+                //AudioManager.instance.PlayOneShot(spawnSound);
                 Spawn(bottomSpawn);
                 Spawn(topSpawn);
             }else if (spawnSpots == SpawnSpots.Top){
+                //AudioManager.instance.PlayOneShot(spawnSound);
                 Spawn(topSpawn);
             }else if(spawnSpots == SpawnSpots.Bottom){
                 Spawn(bottomSpawn);
+            }else if(spawnSpots == SpawnSpots.Alternate){
+                if(alt){
+                    alt = false;
+                    Spawn(topSpawn);
+                }else{
+                    alt = true;
+                    Spawn(bottomSpawn);
+                }
             }
 
             yield return new WaitForSeconds(waveCurve.Evaluate(iterCount));
