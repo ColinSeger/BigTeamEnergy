@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5259860736999210068}
   - component: {fileID: 6096313350161903835}
   - component: {fileID: 4227619546898577884}
+  - component: {fileID: 3109539410926389478}
   m_Layer: 2
   m_Name: LargeBubble
   m_TagString: Untagged
@@ -204,3 +205,25 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &3109539410926389478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8261924498898946303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a096c13198d6c3148b7d1aa60d767df9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEvent:
+    Guid:
+      Data1: -295959591
+      Data2: 1095776580
+      Data3: -1257113949
+      Data4: 104654851
+    Path: event:/Cheers
+  minInterval: 1
+  maxInterval: 2
+  playChance: 0.334
