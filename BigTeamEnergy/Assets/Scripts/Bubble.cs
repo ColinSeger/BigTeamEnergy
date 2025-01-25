@@ -29,7 +29,6 @@ public class Bubble : MonoBehaviour
         if(RoundManager.Instance != null)
         {
         if (!RoundManager.Instance.isRound) Destroy(this.gameObject);
-
         }
     }
 
