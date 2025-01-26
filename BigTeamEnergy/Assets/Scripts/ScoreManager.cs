@@ -30,8 +30,8 @@ public class ScoreManager : MonoBehaviour
 
     public void SetScoreText()
     {
-        p1TextMesh.text = "player 1 Score: " + P1Score;
-        p2TextMesh.text = "player 2 Score: " + P2Score;
+        p1TextMesh.text = "" +P1Score;
+        p2TextMesh.text = "" + P2Score;
     }
 
     void Update(){
