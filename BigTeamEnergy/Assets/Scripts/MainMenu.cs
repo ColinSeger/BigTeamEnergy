@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] RectTransform exitB;
     [SerializeField] RectTransform moveTo;
     [SerializeField] GameObject creditsPanel;
+    [SerializeField] GameObject optionsPanel;
     float movespeed = 5f;
     [SerializeField] float activationDistance = 50f;
 
@@ -54,12 +55,20 @@ public class MainMenu : MonoBehaviour
             {
                 optionsB.anchoredPosition = Vector2.Lerp(optionsB.anchoredPosition, moveTo.anchoredPosition, movespeed * Time.deltaTime);
             }
+            if (Vector2.Distance(optionsB.anchoredPosition, moveTo.anchoredPosition) < activationDistance)
+            {
+                OptionsActive(optionsMove);
+            }
         }
         else if (!optionsMove)
         {
             if (Vector2.Distance(optionsB.anchoredPosition, optionsOrigin) > 0.05f)
             {
                 optionsB.anchoredPosition = Vector2.Lerp(optionsB.anchoredPosition, optionsOrigin, movespeed * Time.deltaTime);
+            }
+            if (Vector2.Distance(optionsB.anchoredPosition, moveTo.anchoredPosition) < activationDistance)
+            {
+                OptionsActive(optionsMove);
             }
         }
 
@@ -102,6 +111,26 @@ public class MainMenu : MonoBehaviour
             exitB.gameObject.SetActive(true);
 
             creditsPanel.SetActive(false);
+        }
+    }
+    void OptionsActive(bool active)
+    {
+        if (active)
+        {
+            startB.gameObject.SetActive(false);
+            creditsB.gameObject.SetActive(false);
+            exitB.gameObject.SetActive(false);
+
+            optionsPanel.SetActive(true);
+        }
+
+        else if (!active)
+        {
+            startB.gameObject.SetActive(true);
+            creditsB.gameObject.SetActive(true);
+            exitB.gameObject.SetActive(true);
+
+            optionsPanel.SetActive(false);
         }
     }
 }
