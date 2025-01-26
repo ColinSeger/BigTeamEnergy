@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5534020835191697435}
   - component: {fileID: 896377402164094360}
   - component: {fileID: 3335194390635682756}
+  - component: {fileID: 7116953634524010427}
   m_Layer: 0
   m_Name: Audio Manager
   m_TagString: Untagged
@@ -60,6 +61,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e89c1bb09b7f2824a908ecd5182d9fb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicEvent:
+    Guid:
+      Data1: -1082796983
+      Data2: 1140482965
+      Data3: -1742813259
+      Data4: 2038227003
+    Path: event:/MusicMain
 --- !u!114 &5534020835191697435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +80,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ea98d7f14dcce45899c44c31e80762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  windEvent:
+    Guid:
+      Data1: -691136272
+      Data2: 1100729206
+      Data3: -412873295
+      Data4: 2077030945
+    Path: event:/Fan
 --- !u!114 &896377402164094360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,3 +131,22 @@ MonoBehaviour:
   minInterval: 1
   maxInterval: 2
   playChance: 0.5
+--- !u!114 &7116953634524010427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4776695273539886928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f8de63cf0bde44c8e7af2be48a2e9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <MusicMain>k__BackingField:
+    Guid:
+      Data1: -1082796983
+      Data2: 1140482965
+      Data3: -1742813259
+      Data4: 2038227003
+    Path: event:/MusicMain

@@ -171,6 +171,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Audio Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 5534020835191697435, guid: 1fbab78598c45a34e9b210455ca939b3, type: 3}
+      propertyPath: windEvent.Path
+      value: event:/Fan
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534020835191697435, guid: 1fbab78598c45a34e9b210455ca939b3, type: 3}
+      propertyPath: windEvent.Guid.Data1
+      value: -691136272
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534020835191697435, guid: 1fbab78598c45a34e9b210455ca939b3, type: 3}
+      propertyPath: windEvent.Guid.Data2
+      value: 1100729206
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534020835191697435, guid: 1fbab78598c45a34e9b210455ca939b3, type: 3}
+      propertyPath: windEvent.Guid.Data3
+      value: -412873295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5534020835191697435, guid: 1fbab78598c45a34e9b210455ca939b3, type: 3}
+      propertyPath: windEvent.Guid.Data4
+      value: 2077030945
+      objectReference: {fileID: 0}
     - target: {fileID: 5965651394721753126, guid: 1fbab78598c45a34e9b210455ca939b3, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1207,6 +1227,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ea98d7f14dcce45899c44c31e80762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  windEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &818799821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,6 +1690,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ea98d7f14dcce45899c44c31e80762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  windEvent:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1054144813
 GameObject:
   m_ObjectHideFlags: 0
