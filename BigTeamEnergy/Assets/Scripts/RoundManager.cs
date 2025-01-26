@@ -6,6 +6,8 @@ public class RoundManager : MonoBehaviour
 {
     public static RoundManager Instance;
 
+    public static MusicLoop musicLoop;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -87,6 +89,7 @@ public class RoundManager : MonoBehaviour
         P2WinsText.text = "player Two Wins: " + ScoreManager.Instance.P2Wins + "\n Score: " + ScoreManager.Instance.P2Score;
 
         endRoundMenu.SetActive(true);
+        musicLoop.StopMusic();
         AudioManager.instance.PlayOneShot(gameDoneSound);
         Time.timeScale = 0f;
         scoreMenu.SetActive(false);
