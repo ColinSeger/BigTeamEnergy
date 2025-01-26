@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject pointBut;
     [SerializeField] Sprite openBut;
     [SerializeField] Sprite closedBut;
+    [SerializeField] GameObject title;
     float movespeed = 5f;
     bool timeMode = true;
     [SerializeField] float activationDistance = 50f;
@@ -37,7 +38,7 @@ public class MainMenu : MonoBehaviour
             {
                 creditsB.anchoredPosition = Vector2.Lerp(creditsB.anchoredPosition, moveTo.anchoredPosition, movespeed * Time.deltaTime);
             }
-            if(Vector2.Distance(creditsB.anchoredPosition, moveTo.anchoredPosition) < activationDistance)
+            if (Vector2.Distance(creditsB.anchoredPosition, moveTo.anchoredPosition) < activationDistance)
             {
                 CreditsActive(creditsMove);
             }
@@ -72,7 +73,8 @@ public class MainMenu : MonoBehaviour
             {
                 optionsB.anchoredPosition = Vector2.Lerp(optionsB.anchoredPosition, optionsOrigin, movespeed * Time.deltaTime);
             }
-            OptionsActive(optionsMove);
+            if(!creditsMove) OptionsActive(optionsMove);
+
         }
 
     }
@@ -103,6 +105,7 @@ public class MainMenu : MonoBehaviour
             startB.gameObject.SetActive(false);
             optionsB.gameObject.SetActive(false);
             exitB.gameObject.SetActive(false);
+            title.SetActive(false);
 
             creditsPanel.SetActive(true);
         }
@@ -112,6 +115,8 @@ public class MainMenu : MonoBehaviour
             startB.gameObject.SetActive(true);
             optionsB.gameObject.SetActive(true);
             exitB.gameObject.SetActive(true);
+            title.SetActive(true);
+
 
             creditsPanel.SetActive(false);
         }
@@ -123,6 +128,8 @@ public class MainMenu : MonoBehaviour
             startB.gameObject.SetActive(false);
             creditsB.gameObject.SetActive(false);
             exitB.gameObject.SetActive(false);
+            title.SetActive(false);
+
 
             optionsPanel.SetActive(true);
         }
@@ -132,6 +139,8 @@ public class MainMenu : MonoBehaviour
             startB.gameObject.SetActive(true);
             creditsB.gameObject.SetActive(true);
             exitB.gameObject.SetActive(true);
+            title.SetActive(true);
+
 
             optionsPanel.SetActive(false);
         }
