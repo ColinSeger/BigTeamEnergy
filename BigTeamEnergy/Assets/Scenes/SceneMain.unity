@@ -977,7 +977,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   bottomSpawn: {fileID: 977080023}
   topSpawn: {fileID: 511592825}
-  speed: 7
+  speed: 20
   spawnSpots: 3
   spawnSound:
     Guid:
