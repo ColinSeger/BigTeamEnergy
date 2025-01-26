@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fan_thrall_menuB_0: 5593611139362105781
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

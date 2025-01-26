@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      knapp2_0: -1857240347669142591
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
