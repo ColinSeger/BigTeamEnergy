@@ -68,6 +68,7 @@ public class RoundManager : MonoBehaviour
 
         ScoreManager.Instance.P1Score = 0;
         ScoreManager.Instance.P2Score = 0;
+        ScoreManager.Instance.SetScoreText();
 
         timer = roundTime;
         spawner.gameObject.SetActive(true);
