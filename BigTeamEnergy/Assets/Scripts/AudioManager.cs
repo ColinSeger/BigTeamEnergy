@@ -5,7 +5,8 @@ using FMOD.Studio;
 public class AudioManager : MonoBehaviour
 {
    public static AudioManager instance { get; private set; }
-
+   
+   
 
     private void Awake()
     {
@@ -19,5 +20,10 @@ public class AudioManager : MonoBehaviour
     public void PlayOneShot(EventReference sound)
     {
         RuntimeManager.PlayOneShot(sound);
+    }
+    public EventInstance CreateInstance (EventReference eventReference)
+    {
+        EventInstance eventInstance = RuntimeManager.CreateInstance(eventReference);
+        return eventInstance;
     }
 }
