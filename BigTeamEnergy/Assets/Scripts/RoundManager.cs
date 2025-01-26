@@ -77,6 +77,7 @@ public class RoundManager : MonoBehaviour
     void EndRound()
     {
         isRound = false;
+        scoreMenu.SetActive(false);
 
         //spawner.StopCoroutine(spawner.WaveSpawn());
         spawner.gameObject.SetActive(false);
@@ -92,6 +93,6 @@ public class RoundManager : MonoBehaviour
         musicLoop.StopMusic();
         AudioManager.instance.PlayOneShot(gameDoneSound);
         Time.timeScale = 0f;
-        scoreMenu.SetActive(false);
+        
     }
 }
