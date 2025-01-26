@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Manu.unity
     guid: 04fbade500cbf7b438eae31c639fda86
   - enabled: 1
+    path: Assets/Scenes/SceneMain Eliott.unity
+    guid: e87e4c476998f4870a2a7a38f22ce8ee
+  - enabled: 0
     path: Assets/Scenes/SceneMain.unity
     guid: 8055eee7423c42e49ad31c880a463df9
   - enabled: 1

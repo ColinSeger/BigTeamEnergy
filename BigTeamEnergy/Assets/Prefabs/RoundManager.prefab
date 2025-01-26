@@ -162,13 +162,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419949369857524742}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2716531621873667371}
-  m_Father: {fileID: 8443850766167263109}
+  m_Father: {fileID: 5452618377645206798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -585,7 +585,6 @@ RectTransform:
   m_Children:
   - {fileID: 1610405717889013017}
   - {fileID: 1466449031265449767}
-  - {fileID: 3885576260498374759}
   m_Father: {fileID: 5452618377645206798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -613,8 +612,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.08018869, b: 0.66310066, a: 1}
+  m_Material: {fileID: 2100000, guid: 43d27a578265a0942bb4074d656cb358, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -682,6 +681,7 @@ MonoBehaviour:
   P1WinsText: {fileID: 6153332588733800523}
   P2WinsText: {fileID: 5668014508692041751}
   spawner: {fileID: 0}
+  scoreMenu: {fileID: 0}
   gameDoneSound:
     Guid:
       Data1: -121788752
@@ -690,6 +690,7 @@ MonoBehaviour:
       Data4: -591560908
     Path: event:/Game End
   round: 0
+  isRound: 1
 --- !u!1 &8226108658505183628
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +723,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8443850766167263109}
+  - {fileID: 3885576260498374759}
   m_Father: {fileID: 3791925079312799756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
