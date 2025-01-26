@@ -902,10 +902,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 5
-      inSlope: -0.15
-      outSlope: -0.15
+      time: 0.03801887
+      value: 4.0011425
+      inSlope: -0.10024769
+      outSlope: -0.10024769
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
@@ -913,8 +913,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 20
       value: 2
-      inSlope: -0.15
-      outSlope: -0.15
+      inSlope: -0.10024769
+      outSlope: -0.10024769
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -924,7 +924,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   bottomSpawn: {fileID: 977080023}
   topSpawn: {fileID: 511592825}
-  speed: 7
+  speed: 14
   spawnSpots: 3
   spawnSound:
     Guid:
