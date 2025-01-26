@@ -11,6 +11,7 @@ public class MusicLoop : MonoBehaviour
     [SerializeField] private EventReference musicEvent;  // Assign your FMOD music event in Inspector
     private EventInstance musicInstance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         musicLoop = AudioManager.instance.CreateInstance(FmodEvents.instance.MusicMain);
