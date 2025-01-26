@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 6319622426849559012}
   - component: {fileID: 5965651394721753126}
   - component: {fileID: 5534020835191697435}
-  - component: {fileID: 896377402164094360}
-  - component: {fileID: 3335194390635682756}
   - component: {fileID: 7116953634524010427}
   m_Layer: 0
   m_Name: Audio Manager
@@ -87,50 +85,6 @@ MonoBehaviour:
       Data3: -412873295
       Data4: 2077030945
     Path: event:/Fan
---- !u!114 &896377402164094360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4776695273539886928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a096c13198d6c3148b7d1aa60d767df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundEvent:
-    Guid:
-      Data1: 1659954974
-      Data2: 1075561034
-      Data3: 1556126359
-      Data4: 1083642980
-    Path: event:/Grunts
-  minInterval: 1
-  maxInterval: 2
-  playChance: 0.5
---- !u!114 &3335194390635682756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4776695273539886928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a096c13198d6c3148b7d1aa60d767df9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundEvent:
-    Guid:
-      Data1: -546695248
-      Data2: 1251727582
-      Data3: -779203173
-      Data4: 1534783325
-    Path: event:/Gasps
-  minInterval: 1
-  maxInterval: 2
-  playChance: 0.5
 --- !u!114 &7116953634524010427
 MonoBehaviour:
   m_ObjectHideFlags: 0

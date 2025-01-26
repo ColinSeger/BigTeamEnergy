@@ -226,4 +226,4 @@ MonoBehaviour:
     Path: event:/Cheers
   minInterval: 1
   maxInterval: 2
-  playChance: 0.334
+  playChance: 1

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4527211713441633984}
   - component: {fileID: 4120315971750242725}
   - component: {fileID: 8393077456337621865}
+  - component: {fileID: 851822937198464211}
   m_Layer: 2
   m_Name: MediumBubble
   m_TagString: Untagged
@@ -204,3 +205,25 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &851822937198464211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7149611107152534191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a096c13198d6c3148b7d1aa60d767df9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEvent:
+    Guid:
+      Data1: -546695248
+      Data2: 1251727582
+      Data3: -779203173
+      Data4: 1534783325
+    Path: event:/Gasps
+  minInterval: 1
+  maxInterval: 2
+  playChance: 1
