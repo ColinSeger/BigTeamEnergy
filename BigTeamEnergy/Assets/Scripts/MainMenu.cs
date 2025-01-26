@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class MainMenu : MonoBehaviour
 {
@@ -10,7 +11,12 @@ public class MainMenu : MonoBehaviour
     [SerializeField] RectTransform moveTo;
     [SerializeField] GameObject creditsPanel;
     [SerializeField] GameObject optionsPanel;
+    [SerializeField] GameObject timeBut;
+    [SerializeField] GameObject pointBut;
+    [SerializeField] Sprite openBut;
+    [SerializeField] Sprite closedBut;
     float movespeed = 5f;
+    bool timeMode = true;
     [SerializeField] float activationDistance = 50f;
 
     public bool creditsMove = false;
@@ -66,10 +72,7 @@ public class MainMenu : MonoBehaviour
             {
                 optionsB.anchoredPosition = Vector2.Lerp(optionsB.anchoredPosition, optionsOrigin, movespeed * Time.deltaTime);
             }
-            if (Vector2.Distance(optionsB.anchoredPosition, moveTo.anchoredPosition) < activationDistance)
-            {
-                OptionsActive(optionsMove);
-            }
+            OptionsActive(optionsMove);
         }
 
     }
@@ -132,5 +135,22 @@ public class MainMenu : MonoBehaviour
 
             optionsPanel.SetActive(false);
         }
+    }
+    public void toggleGame()
+    {
+        timeMode = !timeMode;
+        if (timeMode)
+        {
+            PlayerPrefs.SetInt("gameMode", 0);
+            timeBut.GetComponent<Image>().sprite = closedBut;
+            pointBut.GetComponent<Image>().sprite = openBut;
+        }
+        if (!timeMode)
+        {
+            PlayerPrefs.SetInt("gameMode", 1);
+            timeBut.GetComponent<Image>().sprite = openBut;
+            pointBut.GetComponent<Image>().sprite = closedBut;
+        }
+
     }
 }
