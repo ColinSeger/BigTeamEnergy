@@ -82,14 +82,14 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   filtering:
-    overrideState: 1
-    value: {x: 1, y: 45.999992}
+    overrideState: 0
+    value: {x: 54.000008, y: 99}
   minLuminance:
-    overrideState: 1
-    value: 0
+    overrideState: 0
+    value: -9
   maxLuminance:
-    overrideState: 1
-    value: 0
+    overrideState: 0
+    value: 9
   keyValue:
     overrideState: 1
     value: 1
@@ -114,13 +114,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b77c5407dc277943b591ade9e6b18c5, type: 3}
   m_Name: LensDistortion
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
   intensity:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 22
   intensityX:
     overrideState: 0
     value: 1
@@ -181,13 +181,13 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   mode:
-    overrideState: 0
+    overrideState: 1
     value: 0
   color:
-    overrideState: 0
+    overrideState: 1
     value: {r: 0, g: 0, b: 0, a: 1}
   center:
-    overrideState: 0
+    overrideState: 1
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 0
