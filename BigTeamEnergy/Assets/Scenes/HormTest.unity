@@ -305,6 +305,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 6096313350161903835, guid: 5b73fb7c3566eb54d8aa4732cf9e7077, type: 3}
+      propertyPath: Value
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8261924498898946303, guid: 5b73fb7c3566eb54d8aa4732cf9e7077, type: 3}
       propertyPath: m_Name
       value: LargeBubble
@@ -902,10 +906,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.03801887
-      value: 4.0011425
-      inSlope: -0.10024769
-      outSlope: -0.10024769
+      time: 0.104558736
+      value: 3.8276234
+      inSlope: -0.09186141
+      outSlope: -0.09186141
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
@@ -913,8 +917,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 20
       value: 2
-      inSlope: -0.10024769
-      outSlope: -0.10024769
+      inSlope: -0.09186141
+      outSlope: -0.09186141
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -924,7 +928,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   bottomSpawn: {fileID: 977080023}
   topSpawn: {fileID: 511592825}
-  speed: 14
+  speed: 20
   spawnSpots: 3
   spawnSound:
     Guid:
@@ -1247,6 +1251,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1678590419293019592, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
+      propertyPath: speed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678590419293019592, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -1530,6 +1538,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3469182867404848522, guid: 39496257b2600e94eb13fdcfd2a8dba7, type: 3}
       propertyPath: m_Mass
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6689031485578829596, guid: 39496257b2600e94eb13fdcfd2a8dba7, type: 3}
+      propertyPath: Value
       value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3161,6 +3173,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4120315971750242725, guid: 50d07fddec1285041b894de5f11ae1d9, type: 3}
+      propertyPath: Value
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4527211713441633984, guid: 50d07fddec1285041b894de5f11ae1d9, type: 3}
       propertyPath: m_Mass
       value: 15
@@ -3717,6 +3733,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1678590419293019592, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1678590419293019592, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
       propertyPath: m_Enabled
       value: 1
