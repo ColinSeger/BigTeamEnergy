@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d21bc840be9726428de712639ef1361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Value: 20
+  Value: 10
   Size: 2
   BubbleId: 0
   rb: {fileID: 4527211713441633984}
