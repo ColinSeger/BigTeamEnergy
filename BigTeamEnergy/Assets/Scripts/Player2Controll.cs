@@ -18,16 +18,19 @@ public class Player2Controll : MonoBehaviour
         var down = Physics2D.Raycast(this.transform.position ,Vector2.down, distance);
         if(Input.GetKey(KeyCode.UpArrow) && !up){
             this.transform.position += new Vector3(0, 1, 0) * speed * Time.fixedDeltaTime;
+            StartCoroutine(PlaySoundWithRandomChance());
+            StopCoroutine(PlaySoundWithRandomChance());
         }
         else if(Input.GetKey(KeyCode.DownArrow) && !down){
             this.transform.position -= new Vector3(0, 1, 0) * speed * Time.fixedDeltaTime;
+            StartCoroutine(PlaySoundWithRandomChance());
+            StopCoroutine(PlaySoundWithRandomChance ());
         } 
     }
 
-    private void Start()
-    {
-        StartCoroutine(PlaySoundWithRandomChance());
-    }
+   
+       
+  
 
     private IEnumerator PlaySoundWithRandomChance()
     {
