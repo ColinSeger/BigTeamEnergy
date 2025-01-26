@@ -462,6 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNum: 0
+  bubblePopEffect: {fileID: 0}
 --- !u!1 &396549676
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +493,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13131c4d1e78cb409c99cb689c69633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 1
+  pushForce:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   direction: 0
   barrier: 1
   angleMultiplier: 2
@@ -591,6 +597,13 @@ MonoBehaviour:
   smallBubblePrefab: {fileID: 3029283950946048769, guid: 39496257b2600e94eb13fdcfd2a8dba7, type: 3}
   mediumBubblePrefab: {fileID: 7149611107152534191, guid: 50d07fddec1285041b894de5f11ae1d9, type: 3}
   largeBubblePrefab: {fileID: 8261924498898946303, guid: 5b73fb7c3566eb54d8aa4732cf9e7077, type: 3}
+  mergeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!4 &449267231
 Transform:
   m_ObjectHideFlags: 0
@@ -934,9 +947,12 @@ MonoBehaviour:
   P1Score: 0
   P2Score: 0
   winScore: 100
+  P1Wins: 0
+  P2Wins: 0
   p1TextMesh: {fileID: 1355503366}
   p2TextMesh: {fileID: 818799822}
   winnerWinner: {fileID: 1199566580}
+  PopUp: {fileID: 0}
 --- !u!4 &574080451
 Transform:
   m_ObjectHideFlags: 0
@@ -1669,7 +1685,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13131c4d1e78cb409c99cb689c69633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 10
+  pushForce:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   direction: 1
   barrier: 0
   angleMultiplier: 2
@@ -2012,7 +2033,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13131c4d1e78cb409c99cb689c69633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 1
+  pushForce:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   direction: 1
   barrier: 1
   angleMultiplier: 2
@@ -2225,6 +2251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNum: 1
+  bubblePopEffect: {fileID: 0}
 --- !u!1 &1728118984
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,7 +2334,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13131c4d1e78cb409c99cb689c69633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 10
+  pushForce:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   direction: 0
   barrier: 0
   angleMultiplier: 2

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fc480adcab3428f4c91b1d8c5ef526e4
+guid: 4f81eac84bf854bab8c05f839fd88821
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5745809600813521344
-    second: "Sk\xE4rmbild 2025-01-25 234430_0"
+      213: 5593611139362105781
+    second: fan_thrall_menuB_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Sk\xE4rmbild 2025-01-25 234430_0"
+      name: fan_thrall_menuB_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1438
-        height: 971
+        x: 1190
+        y: 69
+        width: 694
+        height: 900
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c9d48ba3673dbf40800000000000000
-      internalID: 5745809600813521344
+      spriteID: 5b9a85de1bf70ad40800000000000000
+      internalID: 5593611139362105781
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "Sk\xE4rmbild 2025-01-25 234430_0": 5745809600813521344
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
