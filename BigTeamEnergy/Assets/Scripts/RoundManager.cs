@@ -25,9 +25,9 @@ public class RoundManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI P1WinsText;
     [SerializeField] TextMeshProUGUI P2WinsText;
     [SerializeField] WaveManager spawner;
+    [SerializeField] GameObject scoreMenu;
 
     [SerializeField] private EventReference gameDoneSound;
-    [SerializeField] WaveManager waveManager;
 
     float timer;
     public int round;
@@ -58,6 +58,8 @@ public class RoundManager : MonoBehaviour
     }
     public void newRound()
     {
+        scoreMenu.SetActive(true);
+        Time.timeScale = 1f;
         round += 1;
 
         isRound = true;
@@ -76,15 +78,17 @@ public class RoundManager : MonoBehaviour
 
         //spawner.StopCoroutine(spawner.WaveSpawn());
         spawner.gameObject.SetActive(false);
-        waveManager.Reset();
+        spawner.Reset();
 
         if (ScoreManager.Instance.P1Score > ScoreManager.Instance.P2Score) ScoreManager.Instance.P1Wins += 1;
         else if (ScoreManager.Instance.P2Score > ScoreManager.Instance.P1Score) ScoreManager.Instance.P2Wins += 1;
 
-        P1WinsText.text = "player One Wins: " + ScoreManager.Instance.P1Wins;
-        P2WinsText.text = "player Two Wins: " + ScoreManager.Instance.P2Wins;
+        P1WinsText.text = "player One Wins: " + ScoreManager.Instance.P1Wins + "\n Score: " + ScoreManager.Instance.P1Score;
+        P2WinsText.text = "player Two Wins: " + ScoreManager.Instance.P2Wins + "\n Score: " + ScoreManager.Instance.P2Score;
 
         endRoundMenu.SetActive(true);
         AudioManager.instance.PlayOneShot(gameDoneSound);
+        Time.timeScale = 0f;
+        scoreMenu.SetActive(false);
     }
 }

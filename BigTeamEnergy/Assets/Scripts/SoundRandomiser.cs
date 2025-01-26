@@ -15,7 +15,6 @@ public class GruntRandomiser : MonoBehaviour
         if(isActiveAndEnabled){
             StartCoroutine(PlaySoundWithRandomChance());            
         }
-
     }
 
     private IEnumerator PlaySoundWithRandomChance()
