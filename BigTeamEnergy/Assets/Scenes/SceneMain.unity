@@ -862,6 +862,8 @@ MonoBehaviour:
   smallBubblePrefab: {fileID: 3029283950946048769, guid: 39496257b2600e94eb13fdcfd2a8dba7, type: 3}
   mediumBubblePrefab: {fileID: 7149611107152534191, guid: 50d07fddec1285041b894de5f11ae1d9, type: 3}
   largeBubblePrefab: {fileID: 8261924498898946303, guid: 5b73fb7c3566eb54d8aa4732cf9e7077, type: 3}
+  sprite: {fileID: 1816067363595785552, guid: 99b3614a083f81b43ab693689548c4c4, type: 3}
+  spriter: {fileID: 9103604148979467950, guid: ea8085dbbdb6290429145702883a62c1, type: 3}
   mergeSound:
     Guid:
       Data1: 0
@@ -1245,6 +1247,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1678590419293019592, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 361059911}
+    - target: {fileID: 1678590419293019592, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -1300,6 +1306,10 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8049327601866362754, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 361059911}
     - target: {fileID: 8049327601866362754, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -2094,7 +2104,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -44.3}
+  m_AnchoredPosition: {x: 0, y: -44.300003}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1024090259
@@ -3636,6 +3646,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1678590419293019592, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1334175648}
+    - target: {fileID: 1678590419293019592, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -3691,6 +3705,10 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8049327601866362754, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1334175648}
     - target: {fileID: 8049327601866362754, guid: cc4a14dcbab75704cabb8aef3770efe3, type: 3}
       propertyPath: m_Enabled
       value: 0
