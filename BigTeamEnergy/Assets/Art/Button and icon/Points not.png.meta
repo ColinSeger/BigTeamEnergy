@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: ffde3a2f50ee45e409bd9c89f17c2de8
+guid: b6e09be2070584969a7b53c5c6cc1a6b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4913749342553963439
-    second: Bubble_up_right_0
+      213: 3012088096840255756
+    second: Points not_0
+  - first:
+      213: -2905198921321878467
+    second: Points not_1
+  - first:
+      213: -6581821243064945778
+    second: Points not_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bubble_up_right_0
+      name: Points not_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 27
-        width: 1357
-        height: 1344
+        y: 8
+        width: 25
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15403c1d10bdecbb0800000000000000
-      internalID: -4913749342553963439
+      spriteID: c0988545a261dc920800000000000000
+      internalID: 3012088096840255756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Points not_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 15
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ce2c439f8aea7d0800000000000000
+      internalID: -2905198921321878467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Points not_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 12
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e837eff837ca8a4a0800000000000000
+      internalID: -6581821243064945778
       vertices: []
       indices: 
       edges: []
@@ -147,8 +197,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Bubble_up_right_0: -4913749342553963439
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

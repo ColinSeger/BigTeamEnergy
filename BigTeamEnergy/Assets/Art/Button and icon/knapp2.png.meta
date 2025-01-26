@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ffde3a2f50ee45e409bd9c89f17c2de8
+guid: d5e75842a4c80409ea31fa0773b4e916
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4913749342553963439
-    second: Bubble_up_right_0
+      213: -1857240347669142591
+    second: knapp2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bubble_up_right_0
+      name: knapp2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 27
-        width: 1357
-        height: 1344
+        y: 0
+        width: 50
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15403c1d10bdecbb0800000000000000
-      internalID: -4913749342553963439
+      spriteID: 1c368ae6eb1c936e0800000000000000
+      internalID: -1857240347669142591
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Bubble_up_right_0: -4913749342553963439
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

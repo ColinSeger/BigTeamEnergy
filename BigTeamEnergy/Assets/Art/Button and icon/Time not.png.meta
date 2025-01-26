@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ffde3a2f50ee45e409bd9c89f17c2de8
+guid: 549988943eac7403590081e2dfdc0708
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4913749342553963439
-    second: Bubble_up_right_0
+      213: 4668689607608260427
+    second: Time not_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bubble_up_right_0
+      name: Time not_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 27
-        width: 1357
-        height: 1344
+        y: 0
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15403c1d10bdecbb0800000000000000
-      internalID: -4913749342553963439
+      spriteID: b475c0c56748ac040800000000000000
+      internalID: 4668689607608260427
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Bubble_up_right_0: -4913749342553963439
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

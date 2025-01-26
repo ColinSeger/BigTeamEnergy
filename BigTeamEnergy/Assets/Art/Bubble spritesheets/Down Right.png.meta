@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ffde3a2f50ee45e409bd9c89f17c2de8
+guid: 1506edb5e4cc14fbc9aa428b2f23d82a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4913749342553963439
-    second: Bubble_up_right_0
+      213: -7986689230674672806
+    second: Down Right_0
+  - first:
+      213: -8358090868100594655
+    second: Down Right_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bubble_up_right_0
+      name: Down Right_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 27
-        width: 1357
-        height: 1344
+        y: 13
+        width: 1390
+        height: 1384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15403c1d10bdecbb0800000000000000
-      internalID: -4913749342553963439
+      spriteID: a53c232c574992190800000000000000
+      internalID: -7986689230674672806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down Right_1
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 17
+        width: 1338
+        height: 1337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1248d6673a8120c80800000000000000
+      internalID: -8358090868100594655
       vertices: []
       indices: 
       edges: []
@@ -147,8 +172,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Bubble_up_right_0: -4913749342553963439
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
